@@ -3,3 +3,7 @@
 .app-body {
     margin-top: 20px;
 }
+
+.col-md-4 {
+    min-height: 120px;
+}
