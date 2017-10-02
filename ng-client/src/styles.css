@@ -4,6 +4,10 @@
     margin-top: 20px;
 }
 
+p{
+    margin-bottom: 0 !important;
+}
+
 .col-md-4 {
     min-height: 120px;
 }
