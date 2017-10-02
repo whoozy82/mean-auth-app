@@ -33,6 +33,8 @@ export class RegisterComponent implements OnInit {
       password: this.password
     }
 
+    // console.log(this.password)
+
     if(!this.validateService.validateRegister(user)){
       this.flashMessages.show('Uncomplete user credentials!', {cssClass:'alert-danger', timeout: 3000} )
       return false

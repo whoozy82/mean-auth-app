@@ -13,8 +13,8 @@ export class AuthService {
   registerUser(user) {
     let headers = new Headers()
 
-    headers.append('Content-Type', 'appliaction/json')
-    return this.http.post('http://192.168.128.33:3000/users/register', user, {headers:headers})
+    headers.append('Content-Type', 'application/json')
+    return this.http.post('http://localhost:3000/users/register', user, {headers:headers})
             .map(res => res.json())
   }
 }

@@ -28,9 +28,9 @@ app.use(passport.session())
 require('./config/passport')(passport)
 app.use('/users', users)
 
-app.get('/', (req, res) => {
-    res.send('Hello from Express Server.')
-})
+// app.get('/', (req, res) => {
+//     res.send('Hello from Express Server.')
+// })
 
 app.listen(port, () => {
     console.log('Server running on port ' + port)
