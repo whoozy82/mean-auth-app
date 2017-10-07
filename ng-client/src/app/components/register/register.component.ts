@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core'
-import { FlashMessagesService } from 'angular2-flash-messages'
+import { Router } from '@angular/router'
+
 import { ValidateService } from '../../services/validate.service'
 import { AuthService } from '../../services/auth.service'
-import { Router } from '@angular/router'
+
+import { FlashMessagesService } from 'angular2-flash-messages'
+
 
 @Component({
   selector: 'app-register',
@@ -17,10 +20,10 @@ export class RegisterComponent implements OnInit {
   password: String
 
   constructor(
-    private flashMessages: FlashMessagesService,
+    private router: Router,
     private validateService: ValidateService,
     private authService: AuthService,
-    private router: Router) {  }
+    private flashMessages: FlashMessagesService) {  }
 
   ngOnInit() {
   }

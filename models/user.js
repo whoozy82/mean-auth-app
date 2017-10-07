@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 const bcrypt = require('bcryptjs')
-const config = require('../config/database')
+//const config = require('../config/database')
 
 // User Schema
 const UserSchema = mongoose.Schema({
@@ -29,6 +29,7 @@ module.exports.getUserById = (id, callback) => {
 
 module.exports.getUserByUsername = (username, callback) => {
   const query = {username: username}
+  //console.log(query)
   User.findOne(query, callback)
 }
 
